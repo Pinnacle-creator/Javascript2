@@ -4,6 +4,26 @@
 
 const errorCode = 0;
 
+switch (errorCode) {
+    case 0:
+        console.log("Geen watertoevoer");
+        break;
+    case 1:
+        console.log("Temperatuur te laag");
+        break;
+    case 2:
+        console.log("Koffiebonen op");
+        break;
+    case 3:
+        console.log("Afvalbak vol");
+        break;
+    case 4:
+        console.log("Geen druk");
+        break;
+
+    default:
+        console.log("Onbekend");
+}
 // Je mag ervanuit gaan dat deze variabele altijd een waarde tussen de 0 en de 4 bevat. Deze codes hebben de volgende betekenissen (foutmeldingen):
 // 0: "Geen watertoevoer"
 // 1: "Temperatuur te laag"
@@ -23,6 +43,23 @@ const errorCode = 0;
 
 const monitorColor = "red";
 
+switch (monitorColor) {
+    case "green":
+        console.log("Hartslag stabiel");
+        break;
+    case "yellow":
+        console.log("Hartslag verhoogd");
+        break;
+    case "orange":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    case "red":
+        console.log("Kritieke hartslag, actie vereist");
+        break;
+
+    default:
+        console.log("Onbekend");
+}
 // Deze variabele zal altijd een kleur bevatten. De specifieke kleuren waar een melding bij gemaakt moet worden zijn: "red", "green", "yellow" en "orange".
 // Deze codes zijn gelinkt aan de volgende meldingen:
 // "green": "Hartslag stabiel"
@@ -40,3 +77,25 @@ const monitorColor = "red";
 // ==========================================
 // [BONUSOPDRACHT] - optioneel: kun je de switch-statement uit opdracht 2 ook opschrijven met een aantal if-statements?
 // ==========================================
+
+const monitorColor1 = 2;
+const yellow = 1;
+const green = 2;
+const orange = ((monitorColor1 <4 && monitorColor1 > 2));
+const red = ((monitorColor1 <5 && monitorColor1 > 3));
+
+if (monitorColor1 === 1) {
+    console.log("Hartslag stabiel");
+}
+if (monitorColor1 === 2) {
+    console.log("Hartslag verhoogd");
+}
+if (monitorColor1 === 3) {
+    console.log("Kritieke hartslag, actie vereist!");
+}
+if (monitorColor1 === 4) {
+    console.log("Kritieke hartslag, actie vereist!");
+}
+else {
+    console.log("Onbekend");
+}
